@@ -1,5 +1,14 @@
-peso = float(input("Digite seu peso em kg (ex: 70): ").replace(",", "."))
-altura = float(input("Digite sua altura em metros (ex: 1.75): ").replace(",", "."))
+import os
+os.system ("cls")
+
+print("====== Calculadora de IMC ======")
+print("")
+
+print("=== OBS: VALORES SÓ SE APLICA A PESSOAS QUE NÃO PRATICA MUSCULAÇÃO ===")
+print("")
+
+peso = float(input("Digite seu peso em kg (ex: 00.00): ").replace(",", "."))
+altura = float(input("Digite sua altura em metros (ex: 0.00): ").replace(",", "."))
 
 imc = peso / (altura ** 2)
 
